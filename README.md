@@ -24,6 +24,6 @@ quantized_features, indices = quantizer(features)
 
 The `num_neighbors` argument restricts quantization such that each feature can only map to the closest codebook entries to that feature.
 
-For the dynamic programming implementation in this repo, using fewer neighbors does not speed up the search. If you want to speed up the quantization process, consider using the weighted finite-state transducer implementation in [DP-WFST](https://github.com/nicolvisser/dp-wfst/blob/main/dpwfst.py).
+For the dynamic programming implementation in this repo, using fewer neighbors does not speed up the search. If you want to speed up the quantization process, consider using the weighted finite-state transducer implementation in [DP-WFST](https://github.com/nicolvisser/dp-wfst).
 
-In our paper, [Spoken Language Modeling with Duration-Penalized Self-Supervised Units](https://arxiv.org/abs/2505.23494), we set `num_neighbors` to 5% of the codebook size and used [DP-WFST](https://github.com/nicolvisser/dp-wfst/blob/main/dpwfst.py).
+In our paper, [Spoken Language Modeling with Duration-Penalized Self-Supervised Units](https://arxiv.org/abs/2505.23494), we set `num_neighbors` to 5% of the codebook size and used [DP-WFST](https://github.com/nicolvisser/dp-wfst).
