@@ -22,7 +22,7 @@ quantized_features, indices = quantizer(features)
 ```
 ### Notes
 
-The `num_neighbors` argument restricts the quantization such that each feature can only map to the closest codebook entries to that feature.
+The `num_neighbors` argument restricts quantization such that each feature can only map to the closest codebook entries to that feature.
 
 For the dynamic programming implementation in this repo, using fewer neighbors does not speed up the search. If you want to speed up the quantization process, consider using the weighted finite-state transducer implementation in [DP-WFST](https://github.com/nicolvisser/dp-wfst/blob/main/dpwfst.py).
 
